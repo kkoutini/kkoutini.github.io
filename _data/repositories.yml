@@ -1,9 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - kkoutini
 
 github_repos:
-  - alshedivat/al-folio
+  - kkoutini/PaSST
   - twbs/bootstrap
   - jekyll/jekyll
   - jquery/jquery

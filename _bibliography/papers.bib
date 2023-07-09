@@ -1,84 +1,280 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{Koutini2019Receptive,
+  author    = {Khaled Koutini and
+               Hamid Eghbal{-}zadeh and
+               Matthias Dorfer and
+               Gerhard Widmer},
+  title     = {{The Receptive Field as a Regularizer in Deep Convolutional Neural
+               Networks for Acoustic Scene Classification}},
+  booktitle = {27th European Signal Processing Conference, {EUSIPCO} 2019, {A} Coru{\~{n}}a,
+               Spain, September 2-6, 2019},
+  pages     = {1--5},
+  publisher = {{IEEE}},
+  year      = {2019},
+  doi       = {10.23919/EUSIPCO.2019.8902732},
+  timestamp = {Fri, 27 Dec 2019 21:24:47 +0100},
+  selected  = {true},
+  html = {https://ieeexplore.ieee.org/abstract/document/8902732},
+  pdf= {https://arxiv.org/pdf/1907.01803.pdf},
+  abs= {Convolutional Neural Networks (CNNs) have had great success in many machine vision as well as machine audition tasks. Many image recognition network architectures have consequently been adapted for audio processing tasks. However, despite some successes, the performance of many of these did not translate from the image to the audio domain. For example, very deep architectures such as ResNet [1] and DenseNet [2], which significantly outperform VGG [3] in image recognition, do not perform better in audio processing tasks such as Acoustic Scene Classification (ASC). In this paper, we investigate the reasons why such powerful architectures perform worse in ASC compared to simpler models (e.g., VGG). To this end, we analyse the receptive field (RF) of these CNNs and demonstrate the importance of the RF to the generalization capability of the models. Using our receptive field analysis, we adapt both ResNet and DenseNet, achieving state-of-the-art performance and eventually outperforming the VGG-based models. We introduce systematic ways of adapting the RF in CNNs, and present results on three data sets that show how changing the RF over the time and frequency dimensions affects a model's performance. Our experimental results show that very small or very large RFs can cause performance degradation, but deep models can be made to generalize well by carefully choosing an appropriate RF size within a certain range.}
+}
+@article{koutini21journal,
+  author    = {Khaled Koutini and
+               Hamid Eghbal{-}zadeh and
+               Gerhard Widmer},
+  title     = {{Receptive Field Regularization Techniques for Audio Classification and Tagging with Deep Convolutional Neural Networks}},
+  journal   = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  volume    = {29},
+  pages     = {1987--2000},
+  year      = {2021},
+  doi       = {10.1109/TASLP.2021.3082307},
+  timestamp = {Tue, 13 Jul 2021 13:27:44 +0200},
+  selected  = {true},
+  pdf= {https://arxiv.org/pdf/2105.12395.pdf},
+  html = {https://dl.acm.org/doi/abs/10.1109/TASLP.2021.3082307},
+  abs= {In this paper, we study the performance of variants of well-known Convolutional Neural Network (CNN) architectures on different audio tasks. We show that tuning the Receptive Field (RF) of CNNs is crucial to their generalization. An insufficient RF limits the CNN's ability to fit the training data. In contrast, CNNs with an excessive RF tend to over-fit the training data and fail to generalize to unseen testing data. As state-of-the-art CNN architectures-in computer vision and other domains-tend to go deeper in terms of number of layers, their RF size increases and therefore they degrade in performance in several audio classification and tagging tasks. We study well-known CNN architectures and how their building blocks affect their receptive field. We propose several systematic approaches to control the RF of CNNs and systematically test the resulting architectures on different audio classification and tagging tasks and datasets. The experiments show that regularizing the RF of CNNs using our proposed approaches can drastically improve the generalization of models, out-performing complex architectures and pre-trained models on larger datasets. The proposed CNNs achieve state-of-the-art results in multiple tasks, from acoustic scene classification to emotion and theme detection in music to instrument recognition, as demonstrated by top ranks in several pertinent challenges (DCASE, MediaEval).},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+
+
+@techreport{Koutini2020dcasesubmission,
+  author      = {Koutini, Khaled and Henkel, Florian and Eghbal-zadeh, Hamid and Widmer, Gerhard},
+  title       = {{{CP-JKU} Submissions to {{DCASE}}’20: Low-Complexity Cross-Device Acoustic Scene Classification with RF-Regularized {CNNs}}},
+  year        = {2020},
+  month       = {June},
+  institution = {DCASE2020 Challenge},
+  abs = {This technical report describes the CP-JKU team’s submission for Task 1–Subtask A (Acoustic Scene Classification with Multiple Devices) and Subtask B (Low-Complexity Acoustic Scene Classification) of the DCASE-2020 challenge [1]. For Subtask 1. A, we provide our Receptive Field (RF) regularized CNN model as a baseline, and additionally explore the use of two different domain adaptation objectives in the form of the Maximum Mean Discrepancy (MMD) and the Sliced Wasserstein Distance (SWD). For Subtask 1. B, we investigate different parameter reduction methods such as Pruning, while maintaining the receptive field of the networks. Additionally, we incorporate a decomposed convolutional layer that reduces the number of non-zero parameters in our models while only slightly decreasing the accuracy, compared to the full-parameter baseline.},
+  pdf = {https://dcase.community/documents/challenge2020/technical_reports/DCASE2020_Koutini_142.pdf}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+
+  
+
+@article{koutini2020musicrf,
+  author     = {Khaled Koutini and
+                Hamid Eghbal{-}Zadeh and
+                Verena Haunschmid and
+                Paul Primus and
+                Shreyan Chowdhury and
+                Gerhard Widmer},
+  title      = {Receptive-Field Regularized CNNs for Music Classification and Tagging},
+  journal    = {CoRR},
+  volume     = {abs/2007.13503},
+  year       = {2020},
+  eprinttype = {arXiv},
+  eprint     = {2007.13503},
+  timestamp  = {Wed, 29 Jul 2020 15:36:39 +0200},
+  abs = {Convolutional Neural Networks (CNNs) have been successfully used in various Music Information Retrieval (MIR) tasks, both as end-to-end models and as feature extractors for more complex systems. However, the MIR field is still dominated by the classical VGG-based CNN architecture variants, often in combination with more complex modules such as attention, and/or techniques such as pre-training on large datasets. Deeper models such as ResNet -- which surpassed VGG by a large margin in other domains -- are rarely used in MIR. One of the main reasons for this, as we will show, is the lack of generalization of deeper CNNs in the music domain. In this paper, we present a principled way to make deep architectures like ResNet competitive for music-related tasks, based on well-designed regularization strategies. In particular, we analyze the recently introduced Receptive-Field Regularization and Shake-Shake, and show that they significantly improve the generalization of deep CNNs on music-related tasks, and that the resulting deep CNNs can outperform current more complex models such as CNNs augmented with pre-training and attention. We demonstrate this on two different MIR tasks and two corresponding datasets, thus offering our deep regularized CNNs as a new baseline for these datasets, which can also be used as a feature-extracting module in future, more complex approaches.},
+  pdf = {https://arxiv.org/pdf/2007.13503.pdf}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{koutinifaresnet2019,
+  author    = {Koutini, Khaled and Eghbal-zadeh, Hamid and Widmer, Gerhard},
+  booktitle = {Proceedings of the {{Detection}} and {{Classification}} of {{Acoustic Scenes}} and {{Events}} 2019 {{Workshop}} },
+  title     = {Receptive-Field-Regularized {{CNN}} Variants for Acoustic Scene Classification},
+  year      = {2019},
+  address   = {NY, USA},
+  month     = {October},
+  abs  ={Acoustic scene classification and related tasks have been dominated by Convolutional Neural Networks (CNNs). Top-performing CNNs use mainly audio spectograms as input and borrow their architectural design primarily from computer vision. A recent study has shown that restricting the receptive field (RF) of CNNs in appropriate ways is crucial for their performance, robustness and generalization in audio tasks. One side effect of restricting the RF of CNNs is that more frequency information is lost. In this paper, we perform a systematic investigation of different RF configuration for various CNN architectures on the DCASE 2019 Task 1.A dataset. Second, we introduce Frequency Aware CNNs to compensate for the lack of frequency information caused by the restricted RF, and experimentally determine if and in what RF ranges they yield additional improvement. The result of these investigations are several well-performing submissions to different tasks in the DCASE 2019 Challenge.},
+  pdf = {https://arxiv.org/pdf/1909.02859.pdf}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+  
+ @inproceedings{Koutini2020WS,
+  author    = {Koutini, Khaled and Henkel, Florian and Eghbal-zadeh, Hamid and Widmer, Gerhard},
+  title     = {{{Low-Complexity Models for Acoustic Scene Classification Based on Receptive Field Regularization and Frequency Damping}}},
+  booktitle = {{{Proceedings of the Detection and Classification of Acoustic Scenes and Events 2020 Workshop}}},
+  address   = {Tokyo, Japan},
+  month     = {November},
+  year      = {2020},
+  pages     = {86--90},
+  abstract  = {Deep Neural Networks are known to be very demanding in terms of computing and memory requirements. Due to the ever increasing use of embedded systems and mobile devices with a limited resource budget, designing low-complexity models without sacrificing too much of their predictive performance gained great importance. In this work, we investigate and compare several well-known methods to reduce the number of parameters in neural networks. We further put these into the context of a recent study on the effect of the Receptive Field (RF) on a model's performance, and empirically show that we can achieve high-performing low-complexity models by applying specific restrictions on the RFs, in combination with parameter reduction methods. Additionally, we propose a filter-damping technique for regularizing the RF of models, without altering their architecture and changing their parameter counts. We will show that incorporating this technique improves the performance in various low-complexity settings such as pruning and decomposed convolution. Using our proposed filter damping, we achieved the 1st rank at the DCASE-2020 Challenge in the task of Low-Complexity Acoustic Scene Classification.},
+  pdf ={https://arxiv.org/pdf/2011.02955.pdf}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+@techreport{Lehner2019,
+  author      = {Lehner, Bernhard and Koutini, Khaled and Schwarzlm{\"u}ller, Christopher and Gallien, Thomas and Widmer, Gerhard},
+  title       = {{Acoustic Scene Classification with Reject Option Based on {ResNets}}},
+  year        = {2019},
+  month       = {June},
+  institution = {DCASE2019 Challenge},
+  url         = {https://dcase.community/documents/challenge2019/technical_reports/DCASE2019_Lehner_103.pdf},
+  pdf= {https://dcase.community/documents/challenge2019/technical_reports/DCASE2019_Lehner_103.pdf}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+
+
+@article{koutini22pmlr,
+  title     = {{Learning General Audio Representations With Large-Scale Training of Patchout Audio Transformers}},
+  author    = {Khaled Koutini and Shahed Masoudian and Florian Schmid and Hamid Eghbal{-}zadeh and Jan Schl{\"{u}}ter and Gerhard Widmer},
+  journal   = {NeurIPS challenge, Holistic Evaluation of Audio Representations (HEAR). Proceedings of Machine Learning Research},
+  volume    = {166},
+  series    = {Proceedings of Machine Learning Research},
+  publisher = {PMLR},
+  year      = {2022},
+  selected  = {true},
+  pdf = {https://proceedings.mlr.press/v166/koutini22a/koutini22a.pdf},
+  abs= {The success of supervised deep learning methods is largely due to their ability to learn relevant features from raw data. Deep Neural Networks (DNNs) trained on large-scale datasets are capable of capturing a diverse set of features, and learning a representation that can generalize onto unseen tasks and datasets that are from the same domain. Hence, these models can be used as powerful feature extractors, in combination with shallower models as classifiers, for smaller tasks and datasets where the amount of training data is insufficient for learning an end-to-end model from scratch. During the past years, Convolutional Neural Networks (CNNs) have largely been the method of choice for audio processing. However, recently attention-based transformer models have demonstrated great potential in supervised settings, outperforming CNNs. In this work, we investigate the use of audio transformers trained on large-scale datasets to learn general-purpose representations. We study how the different setups in these audio transformers affect the quality of their embeddings. We experiment with the models’ time resolution, extracted embedding level, and receptive fields in order to see how they affect performance on a variety of tasks and datasets, following the HEAR 2021 NeurIPS challenge evaluation setup. Our results show that representations extracted by audio transformers outperform CNN representations. Furthermore, we will show that transformers trained on Audioset can be extremely effective representation extractors for a wide range of downstream tasks.}
+}
+
+
+@inproceedings{koutini22passt,
+  author    = {Khaled Koutini and Jan Schl{\"{u}}ter and Hamid Eghbal{-}zadeh and Gerhard Widmer},
+  title     = {{Efficient Training of Audio Transformers with Patchout}},
+  year      = {2022},
+  booktitle = {Interspeech 2022, 23nd Annual Conference of the International Speech
+               Communication Association},
+  publisher = {{ISCA}},
+  pages     = {2753--2757},
+  doi       = {10.21437/Interspeech.2022-227},
+  selected  = {true},
+  abs = {The great success of transformer-based models in natural language processing (NLP) has led to various attempts at adapting these architectures to other domains such as vision and audio. Recent work has shown that transformers can outperform Convolutional Neural Networks (CNNs) on vision and audio tasks. However, one of the main shortcomings of transformer models, compared to the well-established CNNs, is the computational complexity. In transformers, the compute and memory complexity is known to grow quadratically with the input length. Therefore, there has been extensive work on optimizing transformers, but often at the cost of degrading predictive performance. In this work, we propose a novel method to optimize and regularize transformers on audio spectrograms. Our proposed models achieve a new state-of-the-art performance on Audioset and can be trained on a single consumer-grade GPU. Furthermore, we propose a transformer model that outperforms CNNs in terms of both performance and training speed.},
+  pdf  = {https://arxiv.org/pdf/2110.05069.pdf},
+  html  = {https://www.isca-speech.org/archive/interspeech_2022/koutini22_interspeech.html}
+}
+
+
+
+@inproceedings{Primus2019,
+  author    = {Primus, Paul and Eghbal-zadeh, Hamid and Eitelsebner, David and Koutini, Khaled and Arzt, Andreas and Widmer, Gerhard},
+  booktitle = {Proceedings of the Detection and Classification of Acoustic Scenes and Events 2019 Workshop },
+  title     = {Exploiting Parallel Audio Recordings to Enforce Device Invariance in {{CNN}}-based Acoustic Scene Classification},
+  year      = {2019},
+  address   = {NY, USA},
+  month     = {October},
+  pages     = {204--208}
+}
+
+
+@inproceedings{koutini21overparam,
+  title     = {Over-Parameterization and Generalization in Audio Classification},
+  author    = {Koutini, Khaled and Eghbal-zadeh, Hamid and Henkel, Florian and Schl{\"u}ter, Jan and Widmer, Gerhard},
+  booktitle = {The International Conference of Machine Learning {ICML} Workshop on Overparameterization Pitfalls and Opportunities},
+  year      = {2021},
+  address   = {Virtual},
+  pdf = {https://arxiv.org/pdf/2107.08933.pdf},
+  abs= {Convolutional Neural Networks (CNNs) have been dominating classification tasks in various domains, such as machine vision, machine listening, and natural language processing. In machine listening, while generally exhibiting very good generalization capabilities, CNNs are sensitive to the specific audio recording device used, which has been recognized as a substantial problem in the acoustic scene classification (DCASE) community. In this study, we investigate the relationship between over-parameterization of acoustic scene classification models, and their resulting generalization abilities. Specifically, we test scaling CNNs in width and depth, under different conditions. Our results indicate that increasing width improves generalization to unseen devices, even without an increase in the number of parameters.}
+}
+
+
+
+@inproceedings{KoutiniDCASE2018task4,
+  author    = {Koutini, Khaled and Eghbal-zadeh, Hamid and Widmer, Gerhard},
+  booktitle = {Proceedings of the {{Detection}} and {{Classification}} of {{Acoustic Scenes}} and {{Events}} 2018 {{Workshop}}},
+  title     = {Iterative Knowledge Distillation in {{R}}-{{CNNs}} for Weakly-Labeled Semi-Supervised Sound Event Detection},
+  year      = {2018},
+  month     = nov,
+  pages     = {173-177},
+  keywords  = {Convolutional Neural Network,Knowledge Distillation,Recurrent Neural Network,Semi-supervised,Weakly-labeled}
+}
+
+
+
+@techreport{lehnerClassifyingShortAcoustic2017,
+  author      = {Lehner, Bernhard and Eghbal-zadeh, Hamid and Dorfer, Matthias and Korzeniowski, Filip and Koutini, Khaled and Widmer, Gerhard},
+  title       = {Classifying Short Acoustic Scenes with {I}-Vectors and {CNNs}: Challenges and Optimisations for the 2017 {DCASE} {ASC} Task},
+  institution = {DCASE2017 Challenge},
+  year        = {2017},
+  month       = {June},
+  abstract    = {This report describes the CP-JKU team’s submissions for Task 1 (Acoustic Scene Classification, ASC) of the DCASE-2017 challenge, and discusses some observations we made about the data and the classification setup. Our approach is based on the methodology that achieved ranks 1 and 2 in the 2016 ASC challenge: a fusion of i-vector modelling using MFCC features derived from left and right audio channels, and deep convolutional neural networks (CNNs) trained on raw spectrograms. The data provided for the 2017 ASC task presented some new challenges–in particular, audio stimuli of very short duration. These will be discussed in detail, and our measures for addressing them will be described. The result of our experiments is a classification system that achieves classification accuracies of around 90% on the provided development data, as estimated via the prescribed four-fold cross-validation scheme. On the unseen evaluation data, our best performing method achieved 73.8% and 5th place in the team ranking.},
+  pdf         = {https://dcase.community/documents/challenge2017/technical_reports/DCASE2017_Lehner_142.pdf}
+}
+
+
+
+@inproceedings{koutiniMediaEval2017AcousticBrainz2017,
+  author    = {Koutini, Khaled and Imenina, Alina and Dorfer, Matthias and Gruber, Alexander and Schedl, Markus},
+  title     = {MediaEval 2017 AcousticBrainz Genre Task: Multilayer Perceptron Approach},
+  booktitle = {Proceedings of the MediaEval 2017 Workshop co-located
+               with the Conference and Labs of the Evaluation Forum {(CLEF} 2017),
+               Dublin, Ireland, September 13-15, 2017},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {1984},
+  publisher = {CEUR-WS.org},
+  year      = {2017}
+}
+
+
+
+@inproceedings{koutini2019emotion,
+  author    = {Koutini, Khaled and Chowdhury, Shreyan and Haunschmid, Verena and Eghbal-Zadeh, Hamid and Widmer, Gerhard},
+  language  = {EN},
+  title     = {Emotion and Theme Recognition in Music with Frequency-Aware RF-Regularized
+               CNNs},
+  booktitle = {Proceedings of the MediaEval 2019 Workshop, Sophia Antipolis,
+               France, 27-30 October 2019},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2670},
+  publisher = {CEUR-WS.org},
+  year      = {2019},
+  abs = { We present CP-JKU submission to MediaEval 2019; a Receptive Field-(RF)-regularized and Frequency-Aware CNN approach for tagging music with emotion/mood labels. We perform an investigation regarding the impact of the RF of the CNNs on their performance on this dataset. We observe that ResNets with smaller receptive fields -- originally adapted for acoustic scene classification -- also perform well in the emotion tagging task. We improve the performance of such architectures using techniques such as Frequency Awareness and Shake-Shake regularization, which were used in previous work on general acoustic recognition tasks. },
+  pdf = {https://arxiv.org/pdf/1911.05833.pdf}
+}
+
+
+
+
+
+
+@techreport{Koutinitrrfcnns2019,
+  author      = {Koutini, Khaled and Eghbal-zadeh, Hamid and Widmer, Gerhard},
+  title       = {{{CP}}-{{JKU}} submissions to {{DCASE}}’19: Acoustic Scene Classification and Audio Tagging with Receptive-Field-Regularized {CNNs}},
+  year        = {2019},
+  month       = {June},
+  abstract    = {In this report, we detail the CP-JKU submissions to the DCASE-2019 challenge Task 1 (acoustic scene classification) and Task 2 (audio tagging with noisy labels and minimal supervision). In all of our submissions, we use fully convolutional deep neural networks architectures that are regularized with Receptive Field (RF) adjustments. We adjust the RF of variants of Resnet and Densenet architectures to best fit the various audio processing tasks that use the spectrogram features as input. Additionally, we propose novel CNN layers such as Frequency-Aware CNNs, and new noise compensation techniques such as Adaptive Weighting for Learning from Noisy Labels to cope with the complexities of each task. We prepared all of our submissions without the use of any external data. Our focus in this year’s submissions is to provide the best-performing single-model submission, using our proposed approaches.},
+  institution = {DCASE2019 Challenge},
+  pdf = {https://www.researchgate.net/profile/Khaled-Koutini/publication/334250606_CP-JKU_Submissions_to_DCASE'19_Acoustic_Scene_Classification_and_Audio_Tagging_with_Receptive-Field-Regularized_CNNs/links/5d233bcf299bf1547ca201ff/CP-JKU-Submissions-to-DCASE19-Acoustic-Scene-Classification-and-Audio-Tagging-with-Receptive-Field-Regularized-CNNs.pdf}
+}
+
+
+
+@techreport{SchmidDCASE2022task1,
+  author      = {Schmid, Florian and Masoudian, Shahed and Koutini, Khaled and Widmer, Gerhard},
+  title       = {{CP-JKU} Submission to DCASE22: Distilling Knowledge for Low-Complexity Convolutional Neural Networks From a Patchout Audio Transformer},
+  institution = {DCASE2022 Challenge},
+  month       = {June},
+  year        = {2022},
+  abs = {In this technical report, we describe the CP-JKU team’s submission for Task 1 Low-Complexity Acoustic Scene Classification of the DCASE 22 challenge [1]. We use Knowledge Distillation to teach low-complexity CNN student models from Patchout Spectrogram Transformer (PaSST) models. We use the pre-trained PaSST models on Audioset and fine-tune them on the TAU Urban Acoustic Scenes 2022 Mobile development dataset. We experiment with using an ensemble of teachers, different receptive fields of the student models, and mixing frequency-wise statistics of spectrograms to enhance generalization to unseen devices. Finally, the student models are quantized in order to perform inference computations using 8 bit integers, simulating the low-complexity constraints of edge devices},
+  pdf =  {https://dcase.community/documents/challenge2022/technical_reports/DCASE2022_Schmid_77_t1.pdf}
+
+
+}
+
+@inproceedings{Schmid2022,
+  author    = {Schmid, Florian and Masoudian, Shahed and Koutini, Khaled and Widmer, Gerhard},
+  title     = {Knowledge Distillation from Transformers for Low-Complexity Acoustic Scene Classification},
+  booktitle = {Proceedings of the Detection and Classification of Acoustic Scenes and Events 2022 Workshop},
+  address   = {Nancy, France},
+  month     = {November},
+  year      = {2022},
+  abs  ={Knowledge Distillation (KD) is known for its ability to compress large models into low-complexity solutions while preserving high predictive performance. In Acoustic Scene Classification (ASC), this ability has recently been exploited successfully, as underlined by three of the top four systems in the low-complexity ASC task of the DCASE ‘21 challenge [1] relying on KD. Current KD solutions for ASC mainly use large-scale CNNs or specialist ensembles to derive superior teacher predictions. In this work, we use the Audio Spectrogram Transformer model PaSST, pre-trained on Audioset, as a teacher model. We show how the pre-trained PaSST model can be properly trained downstream on the TAU Urban Acoustic Scenes 2022 Mobile development dataset [2] and how to distill the knowledge into a low-complexity CNN student. We study the effect of using teacher ensembles, using teacher predictions on extended audio sequences, and using Audioset as an additional dataset for knowledge transfer. Additionally, we compare the effectiveness of Mixup and Freq-MixStyle to improve performance and enhance device generalization. The described system achieved rank 1 in the Low-complexity ASC Task of the DCASE ‘22 challenge },
+  pdf = {https://dcase.community/documents/workshop2022/proceedings/DCASE2022Workshop_Schmid_27.pdf}
+}
+
+@techreport{Koutini2021tech,
+  author      = {Koutini, Khaled and Jan, Schlüter and Widmer, Gerhard},
+  title       = {CPJKU Submission to DCASE21: Cross-Device Audio Scene Classification with Wide Sparse Frequency-Damped {CNNs}},
+  institution = {DCASE2021 Challenge},
+  year        = {2021},
+  month       = {June},
+  abs = {We describe the CP-JKU team’s submission for Task 1A Low-Complexity Acoustic Scene Classification with Multiple Devices [1] of the DCASE2021 Challenge. We use Receptive Field (RF) regularized Convolutional Neural Network (CNN) with Frequency Damping as a baseline. We investigate widening the convolutional layers while keeping the number of parameters low by grouping and pruning. We apply iterative magnitude pruning to sparsify the weights of the models. Additionally, we investigate an adversarial domain adaptation approach.},
+  pdf = {https://dcase.community/documents/challenge2021/technical_reports/DCASE2021_Koutini_112_t1.pdf}
+}
+
+
+
+@inproceedings{schmid22effcientat,
+  author    = {Schmid, Florian and Koutini, Khaled and Widmer, Gerhard},
+  title     = {Efficient Large-scale Audio Tagging via Transformer-to-CNN Knowledge Distillation},
+  booktitle = {2023 IEEE international conference on acoustics, speech and signal processing (ICASSP)},
+  month     = {June},
+  year      = {2023},
+  html = {https://ieeexplore.ieee.org/document/10096110},
+  pdf = {https://arxiv.org/pdf/2211.04772.pdf},
+  abs  ={Audio Spectrogram Transformer models rule the field of Audio Tagging, outrunning previously dominating Convolutional Neural Networks (CNNs). Their superiority is based on the ability to scale up and exploit large-scale datasets such as AudioSet. However, Transformers are demanding in terms of model size and computational requirements compared to CNNs. We propose a training procedure for efficient CNNs based on offline Knowledge Distillation (KD) from high-performing yet complex transformers. The proposed training schema and the efficient CNN design based on MobileNetV3 results in models outperforming previous solutions in terms of parameter and computational efficiency and prediction performance. We provide models of different complexity levels, scaling from low-complexity models up to a new state-of-the-art performance of .483 mAP on AudioSet.}
 }
